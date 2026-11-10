@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Nguyen Duy Cuong | Fullstack Web Developer</title>
+
+  <link rel="icon" href="./assets/ico/logo.jpg">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Screen-only Save PDF Button -->
+  <div class="pdf-toolbar">
+    <span class="pdf-tip">
+      <i class="fas fa-circle-info"></i> Paper: A4 &bull; Margins: None &bull; Background graphics: On
+    </span>
+    <button type="button" class="save-pdf-btn" onclick="window.print()">
+      <i class="fas fa-file-pdf"></i> Save PDF
+    </button>
+  </div>
+
+  <!-- A4 CV Document -->
+  <main class="cv-sheet">
+
+    <!-- ══════════ TOP HEADER ══════════ -->
+    <header class="cv-header">
+      <div class="header-left">
+        <div class="header-avatar">
+          <img src="./assets/img/avatar.jpg" alt="Nguyen Duy Cuong">
+        </div>
+        <div class="header-identity">
+          <h1>NGUYEN DUY CUONG</h1>
+          <p class="role-title">FULLSTACK WEB DEVELOPER</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <p><a href="tel:0357747764">0357747764</a></p>
+        <p>Hanoi, Vietnam</p>
+        <p><a href="mailto:nguyenduycuongndc2004@gmail.com">nguyenduycuongndc2004@gmail.com</a></p>
+      </div>
+    </header>
+
+    <!-- ══════════ SUMMARY & LINKS ══════════ -->
+    <section class="intro-section">
+      <p class="intro-text">
+        I am a final-year Information Technology student at PTIT specializing in full-stack JavaScript development (MERN stack). My core passion lies in building responsive, real-time, and scalable web applications with clean architecture and reliable security. Beyond technical skills, I value continuous learning, clean code, and collaborative problem-solving.
+      </p>
+      <ul class="intro-links">
+        <li>- Portfolio: <a href="https://duycuongdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">https://duycuongdev.github.io/portfolio/</a></li>
+        <li>- GitHub: <a href="https://github.com/duycuongdev" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev</a></li>
+      </ul>
+    </section>
+
+    <!-- ══════════ SKILLS ══════════ -->
+    <section class="cv-section">
+      <h2 class="section-heading">SKILLS</h2>
+      <ul class="plain-list">
+        <li>- <strong>Technical main skills:</strong> ReactJS, JavaScript (ES6+), TypeScript, NodeJS, ExpressJS, MongoDB, Redux Toolkit, Material UI (MUI v5), Tailwind CSS, Socket.IO, @dnd-kit.</li>
+        <li>- <strong>Technical additional &amp; DevOps:</strong> JWT (Refresh Token Rotation), Google OAuth 2.0, Joi Validation, Cloudinary, Brevo Email API, Swagger / OpenAPI, Node Test Runner, Git / GitHub, GitHub Actions CI, Vercel, Render.</li>
+        <li>- <strong>Soft skills:</strong> Self-learning, Analytical Problem-solving, Time Management, Teamwork, Clean Code Discipline.</li>
+        <li>- <strong>Languages:</strong> Vietnamese (Native), English (TOEIC 620).</li>
+      </ul>
+    </section>
+
+    <!-- ══════════ EDUCATION ══════════ -->
+    <section class="cv-section">
+      <h2 class="section-heading">EDUCATION</h2>
+      <p class="edu-title">Posts and Telecommunications Institute of Technology (PTIT) <span>(Aug 2022 - June 2027 | 5 years)</span></p>
+      <ul class="plain-list">
+        <li>- Majoring in Information Technology (Final-year student — GPA: <strong>2.66/4.0</strong> | TOEIC: <strong>620</strong>).</li>
+        <li>- Website: <a href="https://ptit.edu.vn/" target="_blank" rel="noopener noreferrer">https://ptit.edu.vn/</a></li>
+        <li>- Relevant Coursework: Data Structures &amp; Algorithms, Database Design, System Architecture, Software Engineering, Web Security.</li>
+      </ul>
+    </section>
+
+    <!-- ══════════ PROJECTS ══════════ -->
+    <section class="cv-section">
+      <h2 class="section-heading">PROJECTS</h2>
+
+      <table class="project-table">
+        <thead>
+          <tr>
+            <th colspan="3" class="table-banner">
+              <div class="banner-title">Trello Web — Real-Time Kanban Task Management Platform</div>
+              <div class="banner-role">Fullstack Web Developer (Solo Project)</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="5" class="col-project-links">
+              <p class="link-group-title">Project Links</p>
+              <p class="link-item">
+                <span>Live Demo:</span><br>
+                <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.<wbr>vercel.app</a>
+              </p>
+              <p class="link-item">
+                <span>Frontend Repo:</span><br>
+                <a href="https://github.com/duycuongdev/trello-web" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-web</a>
+              </p>
+              <p class="link-item">
+                <span>Backend Repo:</span><br>
+                <a href="https://github.com/duycuongdev/trello-api" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-api</a>
+              </p>
+            </td>
+            <td class="col-label">Team Size</td>
+            <td class="col-value">1 (Solo Full-Stack Project)</td>
+          </tr>
+          <tr>
+            <td class="col-label">Position</td>
+            <td class="col-value">Fullstack Web Developer</td>
+          </tr>
+          <tr>
+            <td class="col-label">Project Summary</td>
+            <td class="col-value">
+              A decoupled full-stack Kanban task and project management platform inspired by Trello, built on the MERN stack with Socket.IO for instant real-time team collaboration.
+            </td>
+          </tr>
+          <tr>
+            <td class="col-label">Responsibilities</td>
+            <td class="col-value">
+              <ul class="resp-list">
+                <li>- Architected and deployed the decoupled React/Vite SPA on <strong>Vercel</strong> and Node.js/Express REST + WebSocket API on <strong>Render</strong>.</li>
+                <li>- Built smooth multi-column &amp; card drag-and-drop workflows using <strong>@dnd-kit</strong>, managed via <strong>Redux Toolkit</strong>, <strong>Redux Persist</strong>, and Axios token-refresh interceptors.</li>
+                <li>- Implemented room-based <strong>Socket.IO</strong> synchronization (<code>board:&lt;id&gt;</code>) for live user presence, instant card updates, comments, and board invitations.</li>
+                <li>- Engineered resilient <strong>Dual-Auth</strong> (HttpOnly Cookies + Bearer Header fallback) with <strong>JWT Refresh Token Rotation</strong>, <strong>Google OAuth 2.0</strong>, <strong>Brevo</strong> email activation, and rate limiting.</li>
+                <li>- Designed <strong>MongoDB</strong> data layers and Aggregation Pipelines for unified invitations and <code>DUE SOON</code> / <code>OVERDUE</code> deadline alerts, plus <strong>Cloudinary</strong> media/cover uploads.</li>
+                <li>- Enforced <strong>Joi</strong> payload validation, <strong>Swagger/OpenAPI</strong> docs (<code>/v1/docs</code>), unit/integration tests (<code>node --test</code>), and <strong>GitHub Actions CI</strong> pipelines.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td class="col-label">Technologies</td>
+            <td class="col-value">
+              <p>- <strong>Frontend:</strong> React 18, Vite, Material UI (MUI v5), Redux Toolkit, Redux Persist, @dnd-kit, Axios, Socket.IO Client.</p>
+              <p>- <strong>Backend &amp; Cloud:</strong> Node.js, Express.js, MongoDB (Native Driver), Socket.IO, Joi, JWT, Google OAuth 2.0, Cloudinary, Brevo, Swagger, GitHub Actions.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ══════════ CLOSING ══════════ -->
+    <footer class="cv-closing">
+      THANK YOU SO MUCH FOR TAKING THE TIME TO REVIEW MY CV, HAVE A GOOD DAY!
+    </footer>
+
+  </main>
+</body>
+
+</html>
