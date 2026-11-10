@@ -386,11 +386,20 @@ a:hover {
    MOBILE VIEW
    ══════════════════════════════════════════ */
 @media screen and (max-width: 820px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .cv-sheet {
     width: 100%;
     min-height: auto;
     padding: 20px 16px;
     margin: 0 0 20px;
+  }
+
+  .pdf-toolbar {
+    justify-content: center;
   }
 
   .pdf-tip {
@@ -425,5 +434,21 @@ a:hover {
   .col-label,
   .col-value {
     width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-left {
+    gap: 12px;
+  }
+
+  .header-avatar {
+    width: 58px;
+    height: 68px;
+  }
+
+  .header-left h1 {
+    font-size: 18px;
   }
 }
