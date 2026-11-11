@@ -30,14 +30,17 @@ jobs:
           set -euo pipefail
           for file in \
             index.html \
+            cv-vi.html \
             css/style.css \
             assets/ico/logo.jpg \
-            assets/img/avatar.jpg; do
+            assets/img/avatar.jpg \
+            assets/NguyenDuyCuong-CV-EN.pdf \
+            assets/NguyenDuyCuong-CV-VI.pdf; do
             test -f "$file" || { echo "Missing required file: $file"; exit 1; }
           done
 
           mkdir -p _site
-          cp index.html _site/
+          cp index.html cv-vi.html _site/
           cp -r assets css _site/
           touch _site/.nojekyll
 

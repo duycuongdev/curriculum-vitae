@@ -450,3 +450,72 @@ a:hover {
     font-size: 18px;
   }
 }
+
+/* Gợi ý nhỏ kèm link (cold-start note, guest login hint) */
+.link-hint {
+  font-size: 8.5pt;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* Tinh chỉnh in ấn: nén nội dung để CV vừa 1 trang A4 */
+@media print {
+  .cv-sheet {
+    padding: 8mm 12mm;
+  }
+
+  .intro-section,
+  .cv-section {
+    margin-bottom: 7px;
+  }
+
+  .intro-text {
+    font-size: 10.8px;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+
+  .intro-links li {
+    font-size: 10.8px;
+    margin-bottom: 1.5px;
+    line-height: 1.4;
+  }
+
+  .plain-list li {
+    font-size: 10.9px;
+    margin-bottom: 2px;
+    line-height: 1.38;
+  }
+
+  .project-table td {
+    padding: 4.5px 8px;
+  }
+
+  .col-value {
+    line-height: 1.36;
+    font-size: 10.8px;
+  }
+
+  .resp-list li {
+    margin-bottom: 2px;
+    line-height: 1.36;
+    font-size: 10.8px;
+  }
+
+  .resp-list code,
+  .col-value code {
+    font-size: 10px;
+  }
+
+  .link-item {
+    margin-bottom: 6px;
+  }
+
+  .cv-header {
+    margin-bottom: 10px;
+  }
+
+  .cv-closing {
+    margin-top: 8px;
+  }
+}
