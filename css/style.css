@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════
-   CV STYLESHEET — Clean Table-Based A4 Layout
-   Inspired by crisp single-column tech CVs
+   CV STYLESHEET — LaTeX / Academic 1-Column A4 Layout
+   ATS-friendly, print-ready, monochrome typography
    ══════════════════════════════════════════ */
 
 *, *::before, *::after {
@@ -10,37 +10,43 @@
 }
 
 :root {
-  --cv-accent: #0d9488;
-  --cv-accent-dark: #0f766e;
-  --cv-table-head: #dbeafe;
-  --cv-border: #334155;
-  --cv-border-light: #94a3b8;
-  --cv-text: #111827;
-  --cv-text-muted: #374151;
-  --cv-link: #1d4ed8;
+  --cv-ink: #111111;
+  --cv-ink-soft: #222222;
+  --cv-rule: #1a1a1a;
+  --cv-link: #111111;
+  --cv-bg-page: #eceff3;
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #f1f5f9;
-  color: var(--cv-text);
-  font-size: 11.3px;
-  line-height: 1.42;
+  font-family: "Source Serif 4", "Times New Roman", Georgia, serif;
+  background: var(--cv-bg-page);
+  color: var(--cv-ink);
+  font-size: 9.7pt;
+  line-height: 1.38;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
 
 a {
   color: var(--cv-link);
-  text-decoration: none;
-  overflow-wrap: break-word;
+  text-decoration: underline;
+  text-decoration-color: rgba(17, 17, 17, 0.35);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.15s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration-color: #111111;
 }
 
-/* ── Screen-Only Save PDF Bar ── */
+code {
+  font-family: "JetBrains Mono", "Consolas", "Courier New", monospace;
+  font-size: 8.6pt;
+  background: none;
+  padding: 0;
+}
+
+/* ── Screen-Only Save PDF Toolbar ── */
 .pdf-toolbar {
   width: 210mm;
   max-width: calc(100% - 24px);
@@ -48,8 +54,9 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .pdf-tip {
@@ -58,34 +65,45 @@ a:hover {
   background: #ffffff;
   border: 1px solid #cbd5e1;
   padding: 7px 12px;
-  border-radius: 8px;
+  border-radius: 7px;
 }
 
 .pdf-tip i {
-  color: var(--cv-accent);
+  color: #111111;
   margin-right: 4px;
 }
 
 .save-pdf-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 9px 20px;
-  background: linear-gradient(135deg, #0d9488, #0284c7);
+  gap: 7px;
+  padding: 8px 16px;
+  background: #111827;
   color: #ffffff;
-  border: none;
-  border-radius: 8px;
+  border: 1px solid #111827;
+  border-radius: 7px;
   font-family: inherit;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: background 0.15s ease, transform 0.15s ease;
 }
 
 .save-pdf-btn:hover {
+  background: #1f2937;
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(13, 148, 136, 0.35);
+  text-decoration: none;
+}
+
+.save-pdf-btn.lang-switch {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #cbd5e1;
+}
+
+.save-pdf-btn.lang-switch:hover {
+  background: #f8fafc;
 }
 
 /* ── A4 Paper Sheet ── */
@@ -94,277 +112,191 @@ a:hover {
   min-height: 297mm;
   margin: 0 auto 28px;
   background: #ffffff;
-  padding: 10.5mm 14mm;
-  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.1);
+  padding: 11.5mm 14mm;
+  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.12);
 }
 
 /* ══════════════════════════════════════════
-   HEADER
+   HEADER (Centered Academic / LaTeX Style)
    ══════════════════════════════════════════ */
 .cv-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
+  text-align: center;
   margin-bottom: 10px;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.header-avatar {
-  width: 68px;
-  height: 78px;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1.5px solid #cbd5e1;
-  flex-shrink: 0;
-  background: #f8fafc;
-}
-
-.header-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 20%;
-  display: block;
-}
-
-.header-left h1 {
-  font-size: 23px;
-  font-weight: 800;
-  color: var(--cv-text);
+.cv-header h1 {
+  font-size: 19.5pt;
+  font-weight: 700;
+  color: var(--cv-ink);
   letter-spacing: 0.2px;
   line-height: 1.15;
+  margin-bottom: 2px;
 }
 
 .role-title {
-  font-size: 13px;
+  font-size: 10.2pt;
   font-weight: 700;
-  color: var(--cv-accent);
-  margin-top: 2px;
-  letter-spacing: 0.4px;
-}
-
-.header-right {
-  text-align: right;
-  font-size: 11.2px;
-  color: var(--cv-text-muted);
-  line-height: 1.42;
-}
-
-.header-right a {
-  color: var(--cv-text-muted);
-}
-
-.header-right a:hover {
-  color: var(--cv-accent);
-}
-
-/* ══════════════════════════════════════════
-   INTRO & LINKS
-   ══════════════════════════════════════════ */
-.intro-section {
-  margin-bottom: 9px;
-}
-
-.intro-text {
-  font-size: 11.3px;
-  color: var(--cv-text-muted);
-  margin-bottom: 5px;
-  line-height: 1.44;
-}
-
-.intro-links {
-  list-style: none;
-  font-size: 11.2px;
-  color: var(--cv-text);
-}
-
-.intro-links li {
+  color: var(--cv-ink);
   margin-bottom: 2px;
+}
+
+.role-status {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.contact-line {
+  font-size: 9.4pt;
+  color: var(--cv-ink-soft);
+  line-height: 1.38;
+}
+
+.contact-sep {
+  margin: 0 4px;
+  color: #555555;
 }
 
 /* ══════════════════════════════════════════
    SECTIONS
    ══════════════════════════════════════════ */
 .cv-section {
-  margin-bottom: 9px;
+  margin-bottom: 9.5px;
+}
+
+.cv-section:last-child {
+  margin-bottom: 0;
 }
 
 .section-heading {
-  font-size: 13px;
-  font-weight: 800;
-  color: var(--cv-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  margin-bottom: 4px;
-}
-
-.plain-list {
-  list-style: none;
-  font-size: 11.2px;
-  color: var(--cv-text-muted);
-}
-
-.plain-list li {
-  margin-bottom: 2.5px;
-  line-height: 1.42;
-}
-
-.plain-list strong {
-  color: var(--cv-text);
-}
-
-.edu-title {
-  font-size: 12px;
+  font-size: 11pt;
   font-weight: 700;
-  color: var(--cv-text);
-  margin-bottom: 3px;
+  color: var(--cv-ink);
+  border-bottom: 0.9px solid var(--cv-rule);
+  padding-bottom: 2px;
+  margin-bottom: 5.5px;
+  letter-spacing: 0.15px;
 }
 
-.edu-title span {
-  font-weight: 600;
-  color: var(--cv-text-muted);
+.summary-text {
+  font-size: 9.35pt;
+  color: var(--cv-ink);
+  line-height: 1.37;
+  text-align: justify;
 }
 
-/* ══════════════════════════════════════════
-   PROJECT TABLE (TrungQuanDev Style)
-   ══════════════════════════════════════════ */
-.project-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1.2px solid var(--cv-border);
-  font-size: 11px;
+/* ── Entry Rows (Education / Projects) ── */
+.entry-block {
+  margin-bottom: 7px;
 }
 
-.project-table th,
-.project-table td {
-  border: 1px solid var(--cv-border);
-  padding: 5.5px 9px;
-  vertical-align: top;
+.entry-block:last-child {
+  margin-bottom: 0;
 }
 
-.table-banner {
-  background: var(--cv-table-head);
-  text-align: left;
-  padding: 6.5px 9px !important;
+.entry-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
 }
 
-.banner-title {
-  font-size: 12px;
-  font-weight: 800;
-  color: var(--cv-text);
+.entry-title {
+  font-size: 9.7pt;
+  font-weight: 700;
+  color: var(--cv-ink);
 }
 
-.banner-role {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--cv-accent-dark);
+.entry-tech {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.entry-links {
+  font-weight: 400;
+  font-size: 9.2pt;
+}
+
+.entry-right {
+  font-size: 9.4pt;
+  color: var(--cv-ink);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.entry-sub-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
   margin-top: 1px;
-}
-
-.col-project-links {
-  width: 29%;
-  background: #fafafa;
-}
-
-.link-group-title {
-  font-weight: 700;
-  color: var(--cv-text);
-  margin-bottom: 6px;
-}
-
-.link-item {
-  margin-bottom: 8px;
-  font-size: 11px;
-  line-height: 1.4;
-}
-
-.link-item:last-child {
-  margin-bottom: 0;
-}
-
-.link-item span {
-  font-weight: 600;
-  color: var(--cv-text-muted);
-}
-
-.col-label {
-  width: 17%;
-  font-weight: 700;
-  color: var(--cv-text);
-  background: #f8fafc;
-}
-
-.col-value {
-  width: 54%;
-  color: var(--cv-text-muted);
-  line-height: 1.42;
-}
-
-.col-value strong {
-  color: var(--cv-text);
-}
-
-.col-value p {
   margin-bottom: 3px;
 }
 
-.col-value p:last-child {
+.entry-subtitle {
+  font-size: 9.2pt;
+  font-style: italic;
+  color: var(--cv-ink-soft);
+}
+
+.entry-date {
+  font-size: 9.2pt;
+  font-style: italic;
+  color: var(--cv-ink-soft);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Bullet Lists ── */
+.cv-list {
+  list-style: disc;
+  padding-left: 15px;
+  margin-top: 2px;
+}
+
+.cv-list li {
+  font-size: 9.25pt;
+  color: var(--cv-ink);
+  line-height: 1.36;
+  margin-bottom: 2.5px;
+  text-align: justify;
+}
+
+.cv-list li:last-child {
   margin-bottom: 0;
 }
 
-.resp-list {
+/* ── Technical Skills List ── */
+.skills-list {
   list-style: none;
+  padding-left: 0;
 }
 
-.resp-list li {
-  margin-bottom: 3px;
-  line-height: 1.4;
+.skills-list li {
+  font-size: 9.25pt;
+  color: var(--cv-ink);
+  line-height: 1.37;
+  margin-bottom: 2px;
 }
 
-.resp-list li:last-child {
+.skills-list li:last-child {
   margin-bottom: 0;
 }
 
-.resp-list code {
-  font-family: Consolas, Monaco, monospace;
-  font-size: 10.6px;
-  background: #f1f5f9;
-  padding: 1px 4px;
-  border-radius: 3px;
-  color: var(--cv-accent-dark);
+.skill-cat {
+  font-weight: 700;
 }
 
 /* ══════════════════════════════════════════
-   CLOSING LINE
+   PRINT RULES — Strict 1-Page A4 Output
    ══════════════════════════════════════════ */
-.cv-closing {
-  margin-top: 11px;
-  font-size: 11.6px;
-  font-weight: 800;
-  color: var(--cv-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+@page {
+  size: A4 portrait;
+  margin: 0;
 }
 
-/* ══════════════════════════════════════════
-   PRINT RULES (Exact 1-Page A4)
-   ══════════════════════════════════════════ */
 @media print {
-  @page {
-    size: A4 portrait;
-    margin: 0;
-  }
-
   body {
     background: #ffffff;
-    margin: 0;
-    padding: 0;
   }
 
   .pdf-toolbar {
@@ -372,31 +304,36 @@ a:hover {
   }
 
   .cv-sheet {
-    margin: 0;
-    box-shadow: none;
     width: 210mm;
-    min-height: 297mm;
-    padding: 10.5mm 14mm;
+    min-height: auto;
+    height: auto;
+    margin: 0;
+    padding: 9.5mm 13mm;
+    box-shadow: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--cv-ink);
   }
 }
 
 /* ══════════════════════════════════════════
-   MOBILE VIEW
+   RESPONSIVE (Mobile Screen Viewing)
    ══════════════════════════════════════════ */
 @media screen and (max-width: 820px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-
   .cv-sheet {
     width: 100%;
     min-height: auto;
+    margin: 0;
     padding: 20px 16px;
-    margin: 0 0 20px;
+    box-shadow: none;
   }
 
   .pdf-toolbar {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0 12px;
     justify-content: center;
   }
 
@@ -404,118 +341,14 @@ a:hover {
     display: none;
   }
 
-  .cv-header {
+  .entry-row,
+  .entry-sub-row {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    gap: 2px;
   }
 
-  .header-left h1 {
-    font-size: 20px;
-  }
-
-  .header-right {
+  .summary-text,
+  .cv-list li {
     text-align: left;
-  }
-
-  .project-table,
-  .project-table thead,
-  .project-table tbody,
-  .project-table tr,
-  .project-table th,
-  .project-table td {
-    display: block;
-    width: 100%;
-  }
-
-  .col-project-links,
-  .col-label,
-  .col-value {
-    width: 100%;
-    overflow-wrap: anywhere;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .header-left {
-    gap: 12px;
-  }
-
-  .header-avatar {
-    width: 58px;
-    height: 68px;
-  }
-
-  .header-left h1 {
-    font-size: 18px;
-  }
-}
-
-/* Gợi ý nhỏ kèm link (cold-start note, guest login hint) */
-.link-hint {
-  font-size: 8.5pt;
-  color: #64748b;
-  font-weight: 500;
-}
-
-/* Tinh chỉnh in ấn: nén nội dung để CV vừa 1 trang A4 */
-@media print {
-  .cv-sheet {
-    padding: 8mm 12mm;
-  }
-
-  .intro-section,
-  .cv-section {
-    margin-bottom: 7px;
-  }
-
-  .intro-text {
-    font-size: 10.8px;
-    line-height: 1.4;
-    margin-bottom: 4px;
-  }
-
-  .intro-links li {
-    font-size: 10.8px;
-    margin-bottom: 1.5px;
-    line-height: 1.4;
-  }
-
-  .plain-list li {
-    font-size: 10.9px;
-    margin-bottom: 2px;
-    line-height: 1.38;
-  }
-
-  .project-table td {
-    padding: 4.5px 8px;
-  }
-
-  .col-value {
-    line-height: 1.36;
-    font-size: 10.8px;
-  }
-
-  .resp-list li {
-    margin-bottom: 2px;
-    line-height: 1.36;
-    font-size: 10.8px;
-  }
-
-  .resp-list code,
-  .col-value code {
-    font-size: 10px;
-  }
-
-  .link-item {
-    margin-bottom: 6px;
-  }
-
-  .cv-header {
-    margin-bottom: 10px;
-  }
-
-  .cv-closing {
-    margin-top: 8px;
   }
 }

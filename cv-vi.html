@@ -4,40 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Nguyễn Duy Cường | Fullstack Web Developer</title>
+  <title>CV - Nguyễn Duy Cường | Fullstack Developer &amp; AI Engineer</title>
   <meta name="description"
-    content="CV của Nguyễn Duy Cường — Fullstack & AI Developer (MERN Stack, GenAI, Google Gemini, Socket.IO, Dual-Auth, MongoDB, CI/CD).">
+    content="CV của Nguyễn Duy Cường — Fullstack Developer & AI Engineer (MERN Stack, Google Gemini API, Socket.IO, bảo mật Dual-Auth, MongoDB, CI/CD).">
   <link rel="canonical" href="https://duycuongdev.github.io/curriculum-vitae/cv-vi.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="CV - Nguyễn Duy Cường | Fullstack & AI Developer">
+  <meta property="og:title" content="CV - Nguyễn Duy Cường | Fullstack Developer & AI Engineer">
   <meta property="og:description"
-    content="CV 1 trang (bản tiếng Việt) của Nguyễn Duy Cường (PTIT, MERN Stack, Kanflow — Nền tảng Kanban thông minh tích hợp AI Assistant).">
+    content="CV 1 trang chuẩn ATS (bản tiếng Việt) của Nguyễn Duy Cường (PTIT CNTT, Kanflow — Nền tảng Kanban Real-Time & AI Workspace).">
   <meta property="og:url" content="https://duycuongdev.github.io/curriculum-vitae/cv-vi.html">
   <meta property="og:image" content="https://duycuongdev.github.io/curriculum-vitae/assets/img/avatar.jpg">
 
   <link rel="icon" href="./assets/ico/logo.jpg">
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome (Biểu tượng thanh công cụ màn hình) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Source Serif 4 (hỗ trợ đầy đủ tiếng Việt chuẩn học thuật) + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <!-- Nút lưu PDF (chỉ hiển thị trên màn hình) -->
+  <!-- Thanh công cụ lưu PDF (chỉ hiện trên màn hình) -->
   <div class="pdf-toolbar">
     <span class="pdf-tip">
-      <i class="fas fa-circle-info"></i> Giấy: A4 &bull; Lề: None &bull; Background graphics: On
+      <i class="fas fa-circle-info"></i> Khổ giấy: A4 &bull; Lề: Không (None) &bull; Đồ họa nền: Bật
     </span>
     <a class="save-pdf-btn lang-switch" href="./index.html">English</a>
     <button type="button" class="save-pdf-btn" onclick="window.print()">
@@ -50,133 +50,80 @@
 
     <!-- ══════════ PHẦN ĐẦU ══════════ -->
     <header class="cv-header">
-      <div class="header-left">
-        <div class="header-avatar">
-          <img src="./assets/img/avatar.jpg" alt="Nguyễn Duy Cường">
-        </div>
-        <div class="header-identity">
-          <h1>NGUYỄN DUY CƯỜNG</h1>
-          <p class="role-title">FULLSTACK DEVELOPER &amp; AI ENGINEER</p>
-        </div>
-      </div>
-      <div class="header-right">
-        <p><a href="tel:0357747764">0357747764</a></p>
-        <p>Hà Nội, Việt Nam</p>
-        <p><a href="mailto:nguyenduycuongndc2004@gmail.com">nguyenduycuongndc2004@gmail.com</a></p>
-      </div>
+      <h1>Nguyễn Duy Cường</h1>
+      <p class="role-title">Fullstack Developer &amp; AI Engineer <span class="role-status">(Sẵn sàng nhận việc)</span></p>
+      <p class="contact-line">
+        Hà Nội, Việt Nam<span class="contact-sep">|</span><a href="tel:+84357747764">(+84) 357 747 764</a><span class="contact-sep">|</span><a href="mailto:nguyenduycuongndc2004@gmail.com">nguyenduycuongndc2004@gmail.com</a><span class="contact-sep">|</span><a href="https://github.com/duycuongdev" target="_blank" rel="noopener noreferrer">GitHub</a><span class="contact-sep">|</span><a href="https://duycuongdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+      </p>
     </header>
 
-    <!-- ══════════ MỤC TIÊU & LIÊN KẾT ══════════ -->
-    <section class="intro-section">
-      <p class="intro-text">
-        Sinh viên năm cuối ngành Công nghệ Thông tin tại PTIT, định hướng phát triển Fullstack Web kết hợp Generative AI.
-        Tự thiết kế và hoàn thiện nền tảng Kanflow từ đầu đến cuối — tích hợp Trợ lý AI (Google Gemini 2.5 Flash Lite)
-        hiểu ngữ cảnh bảng, 42+ REST endpoints, đồng bộ real-time bằng Socket.IO, JWT Refresh Token Rotation,
-        bảo mật Dual-Auth và 48 test tự động chạy trên GitHub Actions CI.
-        Tìm kiếm vị trí Fullstack / AI Engineer Intern / Fresher.
-      </p>
-      <ul class="intro-links">
-        <li>- Demo trực tiếp (Kanflow): <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.vercel.app</a> <span class="link-hint">(tài khoản test: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code>)</span></li>
-        <li>- Portfolio: <a href="https://duycuongdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">https://duycuongdev.github.io/portfolio/</a></li>
-        <li>- GitHub: <a href="https://github.com/duycuongdev" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev</a></li>
-      </ul>
-    </section>
-
-    <!-- ══════════ KỸ NĂNG ══════════ -->
+    <!-- ══════════ GIỚI THIỆU ══════════ -->
     <section class="cv-section">
-      <h2 class="section-heading">KỸ NĂNG</h2>
-      <ul class="plain-list">
-        <li>- <strong>Kỹ năng chính:</strong> ReactJS, JavaScript (ES6+), NodeJS, ExpressJS, MongoDB (Native Driver &amp; Aggregation), Redux Toolkit, Material UI (MUI v5), Socket.IO, @dnd-kit, Google Gemini API (GenAI, Function Calling, Prompt Engineering).</li>
-        <li>- <strong>Kỹ năng bổ sung &amp; DevOps:</strong> JWT (Refresh Token Rotation), Google OAuth 2.0, Joi Validation, Cloudinary, Brevo Email API, Swagger / OpenAPI, Node Test Runner (unit &amp; integration), Git / GitHub, GitHub Actions CI, Vercel, Render.</li>
-        <li>- <strong>Biết cơ bản:</strong> Python, TypeScript, Tailwind CSS.</li>
-        <li>- <strong>Ngôn ngữ:</strong> Tiếng Việt (bản ngữ), Tiếng Anh (TOEIC 620).</li>
-      </ul>
+      <h2 class="section-heading">Giới thiệu</h2>
+      <p class="summary-text">
+        Sinh viên năm cuối ngành Công nghệ Thông tin tại Học viện Công nghệ Bưu chính Viễn thông (PTIT), định hướng phát triển phần mềm Fullstack và ứng dụng AI tạo sinh (Generative AI). Có kinh nghiệm trực tiếp thiết kế và triển khai sản phẩm thực tế từ đầu đến cuối — bao gồm trợ lý AI In-App hiểu ngữ cảnh bảng thời gian thực, thực thi tác vụ có cấu trúc, hơn 42 REST API, đồng bộ real-time qua Socket.IO, bảo mật Dual-Auth và 51 bài test tự động trên GitHub Actions CI. Hiện đang tìm kiếm vị trí Fullstack Developer hoặc AI Engineer Intern / Fresher.
+      </p>
     </section>
 
     <!-- ══════════ HỌC VẤN ══════════ -->
     <section class="cv-section">
-      <h2 class="section-heading">HỌC VẤN</h2>
-      <p class="edu-title">Học viện Công nghệ Bưu chính Viễn thông (PTIT) <span>(08/2022 - 06/2027 | 5 năm)</span></p>
-      <ul class="plain-list">
-        <li>- Sinh viên năm cuối, ngành Công nghệ Thông tin.</li>
-        <li>- Môn học liên quan: Cấu trúc dữ liệu &amp; Giải thuật, Thiết kế cơ sở dữ liệu, Kiến trúc hệ thống, Công nghệ phần mềm, An ninh web.</li>
+      <h2 class="section-heading">Học vấn</h2>
+      <div class="entry-block">
+        <div class="entry-row">
+          <span class="entry-title">Học viện Công nghệ Bưu chính Viễn thông (PTIT)</span>
+          <span class="entry-right">Hà Nội, Việt Nam</span>
+        </div>
+        <div class="entry-sub-row">
+          <span class="entry-subtitle">Kỹ sư Công nghệ Thông tin</span>
+          <span class="entry-date">08/2022 – 06/2027</span>
+        </div>
+        <ul class="cv-list">
+          <li><strong>Chứng chỉ tiếng Anh:</strong> TOEIC 620.</li>
+          <li><strong>Môn học liên quan:</strong> Cấu trúc dữ liệu và Giải thuật, Thiết kế cơ sở dữ liệu, Kiến trúc hệ thống, Công nghệ phần mềm, An ninh web.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ DỰ ÁN CÁ NHÂN ══════════ -->
+    <section class="cv-section">
+      <h2 class="section-heading">Dự án cá nhân</h2>
+
+      <div class="entry-block">
+        <div class="entry-row">
+          <span class="entry-title">
+            Kanflow — Nền tảng Kanban &amp; AI
+            <span class="entry-tech">(MERN, Socket.IO, Gemini API)</span>
+          </span>
+          <span class="entry-right entry-links"><a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">Demo trực tiếp</a> | <a href="https://github.com/duycuongdev/Trello_Web" target="_blank" rel="noopener noreferrer">Frontend</a> | <a href="https://github.com/duycuongdev/Trello_Api" target="_blank" rel="noopener noreferrer">Backend</a></span>
+        </div>
+        <div class="entry-sub-row">
+          <span class="entry-subtitle">Fullstack &amp; AI Developer (Dự án độc lập) &bull; Tài khoản test: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code></span>
+          <span class="entry-date">2025 – Hiện tại</span>
+        </div>
+        <ul class="cv-list">
+          <li>Xây dựng Kanflow Assistant, trợ lý AI tích hợp trực tiếp trong ứng dụng sử dụng Google Gemini 2.5 Flash Lite với cơ chế Board Context Injection, đối thoại song ngữ Việt–Anh và thực thi tác vụ có cấu trúc (Function Calling) để tự động sinh toàn bộ bảng Kanban, cột quy trình và thẻ công việc từ ngôn ngữ tự nhiên.</li>
+          <li>Thiết kế cơ chế Multi-Model Resilient Fallback luân chuyển linh hoạt giữa các endpoint Gemini kèm kiểm định cấu trúc JSON đầu ra nhằm xử lý ổn định các đợt nghẽn tải cao (503/429) mà không làm gián đoạn thao tác người dùng.</li>
+          <li>Phát triển hệ thống Full-Stack tách rời gồm hơn 42 REST API (<code>/v1</code>) trên Node.js/Express (triển khai trên Render) và ứng dụng React 18/Vite SPA (triển khai trên Vercel) hỗ trợ đường dẫn thân thiện SEO (<code>/boards/:id/:slug</code>) cùng liên kết sâu tới từng thẻ (<code>?cardId=...</code>).</li>
+          <li>Xây dựng trải nghiệm kéo-thả nhiều cột và thẻ mượt mà bằng <code>@dnd-kit</code> (tùy biến thuật toán phát hiện va chạm và optimistic updates), quản lý trạng thái bằng Redux Toolkit, Redux Persist và Axios interceptors tự động gom các lỗi 401 song song vào một lần làm mới token duy nhất.</li>
+          <li>Cài đặt đồng bộ hóa theo phòng Socket.IO (<code>board:&lt;id&gt;</code>) hiển thị thành viên trực tuyến, truyền tức thì thao tác kéo-thả, bình luận, lời mời tham gia bảng và cơ chế server chủ động ngắt kết nối khi thành viên bị xóa khỏi bảng.</li>
+          <li>Thiết kế kiến trúc bảo mật Dual-Auth kết hợp HttpOnly Cookies cùng dự phòng Bearer Header tự động cho các trình duyệt chặn cookie bên thứ ba (như Safari ITP), tích hợp JWT Refresh Token Rotation dùng một lần (tái sử dụng token đã thu hồi sẽ vô hiệu hóa toàn bộ phiên), Google OAuth 2.0, xác thực email qua Brevo và giới hạn tần suất theo IP.</li>
+          <li>Xây dựng tầng dữ liệu MongoDB Native Driver áp dụng transaction đa tài liệu (<code>withTransaction</code> kèm retry lỗi WriteConflict) đảm bảo nhất quán khi di chuyển thẻ giữa các cột, sử dụng Aggregation Pipelines tổng hợp lời mời và cảnh báo hạn chót <code>DUE SOON</code> / <code>OVERDUE</code>, tích hợp lưu trữ tệp qua Cloudinary.</li>
+          <li>Áp dụng kiểm định dữ liệu đầu vào bằng Joi trên toàn bộ route, xuất bản tài liệu API chuẩn OpenAPI/Swagger (<code>/v1/docs</code>) và viết 51 bài kiểm thử tự động unit &amp; integration (<code>node --test</code> — bao gồm kiểm tra lỗ hổng IDOR, token rotation, bảo mật real-time và AI validation) chạy trên GitHub Actions CI.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ KỸ NĂNG CHUYÊN MÔN ══════════ -->
+    <section class="cv-section">
+      <h2 class="section-heading">Kỹ năng chuyên môn</h2>
+      <ul class="skills-list">
+        <li><span class="skill-cat">Ngôn ngữ lập trình:</span> JavaScript (ES6+), Python (Cơ bản), TypeScript (Cơ bản), HTML5, CSS3</li>
+        <li><span class="skill-cat">AI &amp; Generative AI:</span> Google Gemini API (2.5 Flash Lite), Prompt Engineering, Function Calling / Structured Outputs, Context Injection, Multi-Model Fallback</li>
+        <li><span class="skill-cat">Phát triển Frontend:</span> React 18, Vite, Material UI (MUI v5), Redux Toolkit, Redux Persist, @dnd-kit, Axios, Socket.IO Client, Tailwind CSS</li>
+        <li><span class="skill-cat">Backend &amp; Cơ sở dữ liệu:</span> Node.js, Express.js, MongoDB (Native Driver, Multi-Document Transactions, Aggregation Pipelines), Socket.IO, RESTful APIs, Joi, JWT (Refresh Token Rotation), Google OAuth 2.0</li>
+        <li><span class="skill-cat">DevOps, Kiểm thử &amp; Cloud:</span> Git, GitHub, GitHub Actions CI, Node Test Runner (<code>node --test</code>), Swagger / OpenAPI, Docker, Vercel, Render, Cloudinary, Brevo Email API</li>
       </ul>
     </section>
-
-    <!-- ══════════ DỰ ÁN ══════════ -->
-    <section class="cv-section">
-      <h2 class="section-heading">DỰ ÁN</h2>
-
-      <table class="project-table">
-        <thead>
-          <tr>
-            <th colspan="3" class="table-banner">
-              <div class="banner-title">Kanflow — Nền tảng quản lý công việc Kanban Real-Time tích hợp AI Assistant</div>
-              <div class="banner-role">Fullstack &amp; AI Developer (Dự án cá nhân)</div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="5" class="col-project-links">
-              <p class="link-group-title">Liên kết dự án</p>
-              <p class="link-item">
-                <span>Demo trực tiếp:</span><br>
-                <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.<wbr>vercel.app</a>
-              </p>
-              <p class="link-item">
-                <span>Repo Frontend:</span><br>
-                <a href="https://github.com/duycuongdev/Trello_Web" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-web</a>
-              </p>
-              <p class="link-item">
-                <span>Repo Backend:</span><br>
-                <a href="https://github.com/duycuongdev/Trello_Api" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-api</a>
-              </p>
-              <p class="link-item">
-                <span>Tài khoản Test:</span><br>
-                <code>guest@duycuong.dev</code><br>
-                <span>Mật khẩu:</span> <code>Kanflow@2026</code>
-              </p>
-            </td>
-            <td class="col-label">Quy mô</td>
-            <td class="col-value">1 (Dự án Full-Stack cá nhân)</td>
-          </tr>
-          <tr>
-            <td class="col-label">Vị trí</td>
-            <td class="col-value">Fullstack &amp; AI Developer</td>
-          </tr>
-          <tr>
-            <td class="col-label">Tổng quan</td>
-            <td class="col-value">
-              Nền tảng quản lý công việc và dự án Kanban thời gian thực, tích hợp Trợ lý AI thông minh (Kanflow Assistant) hỗ trợ lập kế hoạch Agile, kiến trúc Full-Stack tách rời (React/Vite &amp; Node/Express/MongoDB), đồng bộ đa người dùng bằng Socket.IO và hệ thống bảo mật Dual-Auth.
-            </td>
-          </tr>
-          <tr>
-            <td class="col-label">Công việc đảm nhiệm</td>
-            <td class="col-value">
-              <ul class="resp-list">
-                <li>- Tích hợp Kanflow Assistant (Google Gemini 2.5 Flash Lite): Xây dựng AI Copilot với Board Context Injection, Function Calling sinh bảng/thẻ tự động và cơ chế Multi-Model Resilient Fallback xử lý nghẽn tải cao (503/429).</li>
-                <li>- Thiết kế kiến trúc Full-Stack (42+ REST API endpoints) với React 18, Vite, Node.js/Express, kéo-thả @dnd-kit mượt mà và đồng bộ phòng Socket.IO (<code>board:&lt;id&gt;</code>) cho presence, thẻ việc và bình luận trực tiếp.</li>
-                <li>- Xây dựng bảo mật Dual-Auth (HttpOnly Cookies + Bearer fallback) với JWT Refresh Token Rotation (thu hồi phiên khi token bị tái sử dụng), Google OAuth 2.0, kích hoạt email qua Brevo và rate limiting.</li>
-                <li>- Thiết kế tầng dữ liệu MongoDB với transaction đa document, Aggregation Pipelines gộp lời mời và cảnh báo hạn chót <code>DUE SOON</code> / <code>OVERDUE</code>; viết 48 test tự động (<code>node --test</code>) chạy trên GitHub Actions CI.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-label">Công nghệ</td>
-            <td class="col-value">
-              <p>- <strong>Frontend:</strong> React 18, Vite, Material UI (MUI v5), Redux Toolkit, Redux Persist, @dnd-kit, Axios, Socket.IO Client.</p>
-              <p>- <strong>Backend, AI &amp; Cloud:</strong> Node.js, Express.js, MongoDB (Native Driver), Google Gemini API (2.5 Flash Lite), Socket.IO, Joi, JWT, Google OAuth 2.0, Cloudinary, Brevo, Swagger, GitHub Actions.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- ══════════ KẾT ══════════ -->
-    <footer class="cv-closing">
-      CẢM ƠN BẠN ĐÃ DÀNH THỜI GIAN ĐỌC CV CỦA TÔI. CHÚC BẠN MỘT NGÀY TỐT LÀNH!
-    </footer>
 
   </main>
 </body>

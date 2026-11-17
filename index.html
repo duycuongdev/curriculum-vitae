@@ -4,37 +4,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Nguyen Duy Cuong | Fullstack Developer & AI Engineer</title>
+  <title>CV - Nguyen Duy Cuong | Fullstack Developer &amp; AI Engineer</title>
   <meta name="description"
-    content="Curriculum Vitae of Nguyen Duy Cuong — Fullstack & AI Developer (MERN Stack, GenAI, Google Gemini, Socket.IO, Dual-Auth security, MongoDB, CI/CD).">
+    content="Curriculum Vitae of Nguyen Duy Cuong — Fullstack Developer & AI Engineer (MERN Stack, Google Gemini API, Socket.IO, Dual-Auth security, MongoDB, CI/CD).">
   <link rel="canonical" href="https://duycuongdev.github.io/curriculum-vitae/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
   <meta property="og:title" content="CV - Nguyen Duy Cuong | Fullstack Developer & AI Engineer">
   <meta property="og:description"
-    content="1-page print-ready online CV of Nguyen Duy Cuong (PTIT IT, MERN Stack, Kanflow — Real-Time Kanban & AI Workspace).">
+    content="1-page ATS-friendly online CV of Nguyen Duy Cuong (PTIT IT, Kanflow — Real-Time Kanban & AI Workspace).">
   <meta property="og:url" content="https://duycuongdev.github.io/curriculum-vitae/">
   <meta property="og:image" content="https://duycuongdev.github.io/curriculum-vitae/assets/img/avatar.jpg">
 
   <link rel="icon" href="./assets/ico/logo.jpg">
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome (Screen Toolbar Icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Source Serif 4 (LaTeX-style Serif with full Vietnamese support) + JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <!-- Screen-only Save PDF Button -->
+  <!-- Screen-only Save PDF Toolbar -->
   <div class="pdf-toolbar">
     <span class="pdf-tip">
       <i class="fas fa-circle-info"></i> Paper: A4 &bull; Margins: None &bull; Background graphics: On
@@ -48,135 +48,82 @@
   <!-- A4 CV Document -->
   <main class="cv-sheet">
 
-    <!-- ══════════ TOP HEADER ══════════ -->
+    <!-- ══════════ HEADER ══════════ -->
     <header class="cv-header">
-      <div class="header-left">
-        <div class="header-avatar">
-          <img src="./assets/img/avatar.jpg" alt="Nguyen Duy Cuong">
-        </div>
-        <div class="header-identity">
-          <h1>NGUYEN DUY CUONG</h1>
-          <p class="role-title">FULLSTACK DEVELOPER &amp; AI ENGINEER</p>
-        </div>
-      </div>
-      <div class="header-right">
-        <p><a href="tel:0357747764">0357747764</a></p>
-        <p>Hanoi, Vietnam</p>
-        <p><a href="mailto:nguyenduycuongndc2004@gmail.com">nguyenduycuongndc2004@gmail.com</a></p>
-      </div>
+      <h1>Nguyen Duy Cuong</h1>
+      <p class="role-title">Fullstack Developer &amp; AI Engineer <span class="role-status">(Open to Work)</span></p>
+      <p class="contact-line">
+        Hanoi, Vietnam<span class="contact-sep">|</span><a href="tel:+84357747764">(+84) 357 747 764</a><span class="contact-sep">|</span><a href="mailto:nguyenduycuongndc2004@gmail.com">nguyenduycuongndc2004@gmail.com</a><span class="contact-sep">|</span><a href="https://github.com/duycuongdev" target="_blank" rel="noopener noreferrer">GitHub</a><span class="contact-sep">|</span><a href="https://duycuongdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+      </p>
     </header>
 
-    <!-- ══════════ SUMMARY & LINKS ══════════ -->
-    <section class="intro-section">
-      <p class="intro-text">
-        Final-year IT student at PTIT focusing on Fullstack Web development and Generative AI integration. Designed and shipped the
-        Kanflow platform end to end — integrating Kanflow Assistant (Google Gemini 2.5 Flash Lite)
-        with board context awareness, 42+ REST endpoints, Socket.IO real-time sync, JWT Refresh Token Rotation,
-        Dual-Auth security, and 48 automated tests on GitHub Actions CI.
-        Seeking a Fullstack / AI Engineer Intern / Fresher role.
-      </p>
-      <ul class="intro-links">
-        <li>- Live Demo (Kanflow): <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.vercel.app</a> <span class="link-hint">(test account: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code>)</span></li>
-        <li>- Portfolio: <a href="https://duycuongdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">https://duycuongdev.github.io/portfolio/</a></li>
-        <li>- GitHub: <a href="https://github.com/duycuongdev" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev</a></li>
-      </ul>
-    </section>
-
-    <!-- ══════════ SKILLS ══════════ -->
+    <!-- ══════════ SUMMARY ══════════ -->
     <section class="cv-section">
-      <h2 class="section-heading">SKILLS</h2>
-      <ul class="plain-list">
-        <li>- <strong>Technical skills:</strong> ReactJS, JavaScript (ES6+), NodeJS, ExpressJS, MongoDB (Native Driver &amp; Aggregation), Redux Toolkit, Material UI (MUI v5), Socket.IO, @dnd-kit, Google Gemini API (GenAI, Function Calling, Prompt Engineering).</li>
-        <li>- <strong>Additional &amp; DevOps:</strong> JWT (Refresh Token Rotation), Google OAuth 2.0, Joi Validation, Cloudinary, Brevo Email API, Swagger / OpenAPI, Node Test Runner (unit &amp; integration), Git / GitHub, GitHub Actions CI, Vercel, Render.</li>
-        <li>- <strong>Familiar:</strong> Python, TypeScript, Tailwind CSS.</li>
-        <li>- <strong>Languages:</strong> Vietnamese (Native), English (TOEIC 620).</li>
-      </ul>
+      <h2 class="section-heading">Summary</h2>
+      <p class="summary-text">
+        Final-year Information Technology student at Posts and Telecommunications Institute of Technology (PTIT), specializing in full-stack web engineering and applied Generative AI integration. Experienced in architecting and shipping production web software end to end — including an in-app AI Copilot with real-time board context injection, structured action execution, 42+ REST APIs, Socket.IO real-time synchronization, hardened Dual-Auth security, and 51 automated CI tests. Actively seeking a Fullstack Developer or AI Engineer Intern / Fresher role.
+      </p>
     </section>
 
     <!-- ══════════ EDUCATION ══════════ -->
     <section class="cv-section">
-      <h2 class="section-heading">EDUCATION</h2>
-      <p class="edu-title">Posts and Telecommunications Institute of Technology (PTIT) <span>(Aug 2022 - June 2027 | 5 years)</span></p>
-      <ul class="plain-list">
-        <li>- Final-year student, majoring in Information Technology.</li>
-        <li>- Relevant Coursework: Data Structures &amp; Algorithms, Database Design, System Architecture, Software Engineering, Web Security.</li>
+      <h2 class="section-heading">Education</h2>
+      <div class="entry-block">
+        <div class="entry-row">
+          <span class="entry-title">Posts and Telecommunications Institute of Technology (PTIT)</span>
+          <span class="entry-right">Hanoi, Vietnam</span>
+        </div>
+        <div class="entry-sub-row">
+          <span class="entry-subtitle">Bachelor of Engineering in Information Technology</span>
+          <span class="entry-date">Aug 2022 – June 2027</span>
+        </div>
+        <ul class="cv-list">
+          <li><strong>English Qualification:</strong> TOEIC 620.</li>
+          <li><strong>Relevant Coursework:</strong> Data Structures and Algorithms, Database Design, System Architecture, Software Engineering, Web Security.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ PERSONAL PROJECTS ══════════ -->
+    <section class="cv-section">
+      <h2 class="section-heading">Personal Projects</h2>
+
+      <div class="entry-block">
+        <div class="entry-row">
+          <span class="entry-title">
+            Kanflow — Real-Time Kanban &amp; AI Workspace
+            <span class="entry-tech">(MERN, Socket.IO, Gemini API)</span>
+          </span>
+          <span class="entry-right entry-links"><a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a> | <a href="https://github.com/duycuongdev/Trello_Web" target="_blank" rel="noopener noreferrer">Frontend</a> | <a href="https://github.com/duycuongdev/Trello_Api" target="_blank" rel="noopener noreferrer">Backend</a></span>
+        </div>
+        <div class="entry-sub-row">
+          <span class="entry-subtitle">Solo Fullstack &amp; AI Developer &bull; Test Account: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code></span>
+          <span class="entry-date">2025 – Present</span>
+        </div>
+        <ul class="cv-list">
+          <li>Built Kanflow Assistant, an in-app AI Copilot powered by Google Gemini 2.5 Flash Lite featuring real-time board context injection, bilingual conversation (Vietnamese and English), and structured action execution (Function Calling) to automatically scaffold complete boards, workflow columns, and task cards from natural language prompts.</li>
+          <li>Engineered a resilient multi-model fallback pool across Gemini inference endpoints with strict JSON output validation to gracefully absorb 503 and 429 high-demand spikes without interrupting active user workflows.</li>
+          <li>Designed and shipped a decoupled full-stack platform comprising 42+ versioned REST endpoints (<code>/v1</code>) on Node.js/Express (deployed on Render) and a responsive React 18/Vite SPA (deployed on Vercel) with SEO-friendly slugs (<code>/boards/:id/:slug</code>) and card modal deep-linking (<code>?cardId=...</code>).</li>
+          <li>Implemented fluid multi-column and card drag-and-drop interactions using <code>@dnd-kit</code> with custom collision detection and optimistic UI updates, backed by Redux Toolkit, Redux Persist, and Axios token-refresh interceptors that queue concurrent 401 requests behind a single refresh cycle.</li>
+          <li>Architected room-based Socket.IO synchronization (<code>board:&lt;id&gt;</code>) for live member presence, instant drag-and-drop broadcasting, real-time discussion comments, board invitations, and server-enforced socket eviction when members are removed.</li>
+          <li>Engineered hardened Dual-Auth security combining HttpOnly cookies with an automatic Bearer header fallback for cookie-blocking browsers (such as Safari ITP), alongside single-use JWT Refresh Token Rotation (reusing a revoked token invalidates all user sessions), Google OAuth 2.0, Brevo email activation/reset, and per-IP rate limiting.</li>
+          <li>Structured MongoDB Native Driver data layers using multi-document transactions (<code>withTransaction</code> with transient WriteConflict retries) for atomic cross-column card moves, Aggregation Pipelines uniting board invitations with <code>DUE SOON</code> / <code>OVERDUE</code> deadline alerts, and Cloudinary media uploads.</li>
+          <li>Enforced Joi request schema validation across all routes, published interactive OpenAPI/Swagger documentation (<code>/v1/docs</code>), and wrote 51 automated unit and integration tests (<code>node --test</code> — covering IDOR authorization, token rotation, realtime security, and AI payload validation) running on GitHub Actions CI.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══════════ TECHNICAL SKILLS ══════════ -->
+    <section class="cv-section">
+      <h2 class="section-heading">Technical Skills</h2>
+      <ul class="skills-list">
+        <li><span class="skill-cat">Programming Languages:</span> JavaScript (ES6+), Python (Familiar), TypeScript (Familiar), HTML5, CSS3</li>
+        <li><span class="skill-cat">AI &amp; Generative AI:</span> Google Gemini API (2.5 Flash Lite), Prompt Engineering, Function Calling / Structured Outputs, Context Injection, Multi-Model Fallback</li>
+        <li><span class="skill-cat">Frontend Development:</span> React 18, Vite, Material UI (MUI v5), Redux Toolkit, Redux Persist, @dnd-kit, Axios, Socket.IO Client, Tailwind CSS</li>
+        <li><span class="skill-cat">Backend &amp; Database:</span> Node.js, Express.js, MongoDB (Native Driver, Multi-Document Transactions, Aggregation Pipelines), Socket.IO, RESTful APIs, Joi, JWT (Refresh Token Rotation), Google OAuth 2.0</li>
+        <li><span class="skill-cat">DevOps, Testing &amp; Cloud:</span> Git, GitHub, GitHub Actions CI, Node Test Runner (<code>node --test</code>), Swagger / OpenAPI, Docker, Vercel, Render, Cloudinary, Brevo Email API</li>
       </ul>
     </section>
-
-    <!-- ══════════ PROJECTS ══════════ -->
-    <section class="cv-section">
-      <h2 class="section-heading">PROJECTS</h2>
-
-      <table class="project-table">
-        <thead>
-          <tr>
-            <th colspan="3" class="table-banner">
-              <div class="banner-title">Kanflow — Real-Time Kanban &amp; AI Workspace</div>
-              <div class="banner-role">Fullstack &amp; AI Developer (Solo Project)</div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="5" class="col-project-links">
-              <p class="link-group-title">Project Links</p>
-              <p class="link-item">
-                <span>Live Demo:</span><br>
-                <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.<wbr>vercel.app</a>
-              </p>
-              <p class="link-item">
-                <span>Frontend Repo:</span><br>
-                <a href="https://github.com/duycuongdev/Trello_Web" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-web</a>
-              </p>
-              <p class="link-item">
-                <span>Backend Repo:</span><br>
-                <a href="https://github.com/duycuongdev/Trello_Api" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-api</a>
-              </p>
-              <p class="link-item">
-                <span>Test Account:</span><br>
-                <code>guest@duycuong.dev</code><br>
-                <span>Password:</span> <code>Kanflow@2026</code>
-              </p>
-            </td>
-            <td class="col-label">Team Size</td>
-            <td class="col-value">1 (Solo Full-Stack Project)</td>
-          </tr>
-          <tr>
-            <td class="col-label">Position</td>
-            <td class="col-value">Fullstack &amp; AI Developer</td>
-          </tr>
-          <tr>
-            <td class="col-label">Project Summary</td>
-            <td class="col-value">
-              A decoupled full-stack Kanban task and project management platform integrating an intelligent AI Copilot (Kanflow Assistant) for Agile workflow planning, real-time multi-user synchronization via Socket.IO, and a hardened Dual-Auth security architecture.
-            </td>
-          </tr>
-          <tr>
-            <td class="col-label">Responsibilities</td>
-            <td class="col-value">
-              <ul class="resp-list">
-                <li>- Integrated Kanflow Assistant (Google Gemini 2.5 Flash Lite): Built an in-app AI Copilot with Board Context Injection, Structured Action Execution (Function Calling) for auto-scaffolding boards/cards, and a resilient multi-model fallback pool (503/429 handling).</li>
-                <li>- Designed full-stack architecture (42+ REST API endpoints) with React 18, Vite, Node.js/Express, smooth @dnd-kit drag-and-drop, and room-based Socket.IO (<code>board:&lt;id&gt;</code>) real-time multi-user synchronization.</li>
-                <li>- Engineered hardened Dual-Auth security (HttpOnly Cookies + Bearer fallback) with single-use JWT Refresh Token Rotation, Google OAuth 2.0, Brevo email activation, and per-IP rate limiting.</li>
-                <li>- Designed MongoDB data layers with multi-document transactions and Aggregation Pipelines for deadline alerts; wrote 48 automated tests (<code>node --test</code>) running on GitHub Actions CI.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-label">Technologies</td>
-            <td class="col-value">
-              <p>- <strong>Frontend:</strong> React 18, Vite, Material UI (MUI v5), Redux Toolkit, Redux Persist, @dnd-kit, Axios, Socket.IO Client.</p>
-              <p>- <strong>Backend, AI &amp; Cloud:</strong> Node.js, Express.js, MongoDB (Native Driver), Google Gemini API (2.5 Flash Lite), Socket.IO, Joi, JWT, Google OAuth 2.0, Cloudinary, Brevo, Swagger, GitHub Actions.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- ══════════ CLOSING ══════════ -->
-    <footer class="cv-closing">
-      THANK YOU SO MUCH FOR TAKING THE TIME TO REVIEW MY CV, HAVE A GOOD DAY!
-    </footer>
 
   </main>
 </body>
