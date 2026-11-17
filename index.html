@@ -56,7 +56,7 @@
         </div>
         <div class="header-identity">
           <h1>NGUYEN DUY CUONG</h1>
-          <p class="role-title">FULLSTACK DEVELOPER &amp; AI ENGINEER (MERN + GenAI)</p>
+          <p class="role-title">FULLSTACK DEVELOPER &amp; AI ENGINEER</p>
         </div>
       </div>
       <div class="header-right">
@@ -76,7 +76,7 @@
         Seeking a Fullstack / AI Engineer Intern / Fresher role.
       </p>
       <ul class="intro-links">
-        <li>- Live Demo (Kanflow): <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.vercel.app</a> <span class="link-hint">(test account: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code> or click “Try as Guest”)</span></li>
+        <li>- Live Demo (Kanflow): <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.vercel.app</a> <span class="link-hint">(test account: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code>)</span></li>
         <li>- Portfolio: <a href="https://duycuongdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">https://duycuongdev.github.io/portfolio/</a></li>
         <li>- GitHub: <a href="https://github.com/duycuongdev" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev</a></li>
       </ul>
@@ -133,10 +133,9 @@
                 <a href="https://github.com/duycuongdev/Trello_Api" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-api</a>
               </p>
               <p class="link-item">
-                <span>Recruiter Test Account:</span><br>
+                <span>Test Account:</span><br>
                 <code>guest@duycuong.dev</code><br>
-                <span>Password:</span> <code>Kanflow@2026</code><br>
-                <span class="link-hint">(or 1-click “Try as Guest”)</span>
+                <span>Password:</span> <code>Kanflow@2026</code>
               </p>
             </td>
             <td class="col-label">Team Size</td>
@@ -156,13 +155,10 @@
             <td class="col-label">Responsibilities</td>
             <td class="col-value">
               <ul class="resp-list">
-                <li>- Integrated Kanflow Assistant (Google Gemini 2.5 Flash Lite): Built an in-app AI Copilot with real-time Board Context Injection, bilingual conversation (VI/EN), and Structured Action Execution (Function Calling / JSON actions) to automatically scaffold boards, add lists, and create cards; implemented a multi-model resilient fallback pool to handle 503/429 load spikes gracefully.</li>
-                <li>- Designed 42+ REST API endpoints (<code>/v1</code>) and deployed the decoupled React/Vite SPA on Vercel and the Node.js/Express REST + WebSocket API on Render.</li>
-                <li>- Built smooth multi-column &amp; card drag-and-drop workflows using @dnd-kit (custom collision detection, optimistic updates), managed via Redux Toolkit, Redux Persist, and Axios token-refresh interceptors that queue concurrent 401s behind a single refresh call.</li>
-                <li>- Implemented room-based Socket.IO synchronization (<code>board:&lt;id&gt;</code>) for live user presence, instant card updates, comments, and board invitations across all connected clients.</li>
-                <li>- Engineered resilient Dual-Auth (HttpOnly Cookies + Bearer Header fallback for browsers that block cookies) with JWT Refresh Token Rotation (single-use tokens, reuse revokes the session), Google OAuth 2.0, Brevo email activation, and per-IP rate limiting.</li>
-                <li>- Designed MongoDB data layers with multi-document transactions and Aggregation Pipelines for unified invitations and <code>DUE SOON</code> / <code>OVERDUE</code> deadline alerts, plus Cloudinary media/cover uploads.</li>
-                <li>- Enforced Joi payload validation, documented all endpoints with Swagger/OpenAPI (<code>/v1/docs</code>), and wrote 48 unit &amp; integration tests (<code>node --test</code> — including IDOR, token-rotation, and AI validation suites) running on GitHub Actions CI.</li>
+                <li>- Integrated Kanflow Assistant (Google Gemini 2.5 Flash Lite): Built an in-app AI Copilot with Board Context Injection, Structured Action Execution (Function Calling) for auto-scaffolding boards/cards, and a resilient multi-model fallback pool (503/429 handling).</li>
+                <li>- Designed full-stack architecture (42+ REST API endpoints) with React 18, Vite, Node.js/Express, smooth @dnd-kit drag-and-drop, and room-based Socket.IO (<code>board:&lt;id&gt;</code>) real-time multi-user synchronization.</li>
+                <li>- Engineered hardened Dual-Auth security (HttpOnly Cookies + Bearer fallback) with single-use JWT Refresh Token Rotation, Google OAuth 2.0, Brevo email activation, and per-IP rate limiting.</li>
+                <li>- Designed MongoDB data layers with multi-document transactions and Aggregation Pipelines for deadline alerts; wrote 48 automated tests (<code>node --test</code>) running on GitHub Actions CI.</li>
               </ul>
             </td>
           </tr>

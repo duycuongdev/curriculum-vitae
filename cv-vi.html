@@ -56,7 +56,7 @@
         </div>
         <div class="header-identity">
           <h1>NGUYỄN DUY CƯỜNG</h1>
-          <p class="role-title">FULLSTACK DEVELOPER &amp; AI ENGINEER (MERN + GenAI)</p>
+          <p class="role-title">FULLSTACK DEVELOPER &amp; AI ENGINEER</p>
         </div>
       </div>
       <div class="header-right">
@@ -76,7 +76,7 @@
         Tìm kiếm vị trí Fullstack / AI Engineer Intern / Fresher.
       </p>
       <ul class="intro-links">
-        <li>- Demo trực tiếp (Kanflow): <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.vercel.app</a> <span class="link-hint">(tài khoản test: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code> hoặc bấm “Try as Guest”)</span></li>
+        <li>- Demo trực tiếp (Kanflow): <a href="https://trello-web-tawny.vercel.app" target="_blank" rel="noopener noreferrer">https://trello-web-tawny.vercel.app</a> <span class="link-hint">(tài khoản test: <code>guest@duycuong.dev</code> / <code>Kanflow@2026</code>)</span></li>
         <li>- Portfolio: <a href="https://duycuongdev.github.io/portfolio/" target="_blank" rel="noopener noreferrer">https://duycuongdev.github.io/portfolio/</a></li>
         <li>- GitHub: <a href="https://github.com/duycuongdev" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev</a></li>
       </ul>
@@ -133,10 +133,9 @@
                 <a href="https://github.com/duycuongdev/Trello_Api" target="_blank" rel="noopener noreferrer">https://github.com/duycuongdev/<wbr>trello-api</a>
               </p>
               <p class="link-item">
-                <span>Tài khoản Test HR:</span><br>
+                <span>Tài khoản Test:</span><br>
                 <code>guest@duycuong.dev</code><br>
-                <span>Pass:</span> <code>Kanflow@2026</code><br>
-                <span class="link-hint">(hoặc 1-click “Try as Guest”)</span>
+                <span>Mật khẩu:</span> <code>Kanflow@2026</code>
               </p>
             </td>
             <td class="col-label">Quy mô</td>
@@ -156,13 +155,10 @@
             <td class="col-label">Công việc đảm nhiệm</td>
             <td class="col-value">
               <ul class="resp-list">
-                <li>- Tích hợp Kanflow Assistant (Google Gemini 2.5 Flash Lite): Xây dựng In-App AI Chatbot có khả năng hiểu ngữ cảnh bảng hiện tại (Board Context Injection), đối thoại đa ngôn ngữ (VI/EN) và thực thi tác vụ có cấu trúc (Function Calling / Structured Actions) để tự động sinh bảng Kanban hoàn chỉnh, thêm cột và tạo thẻ công việc; thiết kế cơ chế Multi-Model Resilient Fallback tự động xử lý nghẽn tải cao (503 / 429).</li>
-                <li>- Thiết kế 42+ REST API endpoints (<code>/v1</code>); triển khai SPA React/Vite trên Vercel và API Node.js/Express (REST + WebSocket) trên Render.</li>
-                <li>- Xây dựng kéo-thả multi-column &amp; card mượt mà bằng @dnd-kit (custom collision detection, optimistic updates), quản lý state bằng Redux Toolkit, Redux Persist và Axios interceptors tự làm mới token (gom các 401 song song vào 1 lần refresh).</li>
-                <li>- Cài đặt đồng bộ theo phòng Socket.IO (<code>board:&lt;id&gt;</code>): presence trực tiếp, cập nhật card tức thì, bình luận và lời mời board cho mọi client đang kết nối.</li>
-                <li>- Xây dựng bảo mật Dual-Auth (HttpOnly Cookies + dự phòng Bearer Header cho trình duyệt chặn cookie) với JWT Refresh Token Rotation (token dùng 1 lần, tái sử dụng là thu hồi toàn bộ phiên), Google OAuth 2.0, kích hoạt email qua Brevo, rate limiting theo IP.</li>
-                <li>- Thiết kế tầng dữ liệu MongoDB với transaction đa document và Aggregation Pipelines gộp lời mời board cùng cảnh báo hạn chót <code>DUE SOON</code> / <code>OVERDUE</code>; upload media qua Cloudinary.</li>
-                <li>- Áp dụng validation Joi, tài liệu Swagger/OpenAPI (<code>/v1/docs</code>), viết 48 test unit &amp; integration (<code>node --test</code> — gồm cả suite IDOR, rotation, AI validation) chạy trên GitHub Actions CI.</li>
+                <li>- Tích hợp Kanflow Assistant (Google Gemini 2.5 Flash Lite): Xây dựng AI Copilot với Board Context Injection, Function Calling sinh bảng/thẻ tự động và cơ chế Multi-Model Resilient Fallback xử lý nghẽn tải cao (503/429).</li>
+                <li>- Thiết kế kiến trúc Full-Stack (42+ REST API endpoints) với React 18, Vite, Node.js/Express, kéo-thả @dnd-kit mượt mà và đồng bộ phòng Socket.IO (<code>board:&lt;id&gt;</code>) cho presence, thẻ việc và bình luận trực tiếp.</li>
+                <li>- Xây dựng bảo mật Dual-Auth (HttpOnly Cookies + Bearer fallback) với JWT Refresh Token Rotation (thu hồi phiên khi token bị tái sử dụng), Google OAuth 2.0, kích hoạt email qua Brevo và rate limiting.</li>
+                <li>- Thiết kế tầng dữ liệu MongoDB với transaction đa document, Aggregation Pipelines gộp lời mời và cảnh báo hạn chót <code>DUE SOON</code> / <code>OVERDUE</code>; viết 48 test tự động (<code>node --test</code>) chạy trên GitHub Actions CI.</li>
               </ul>
             </td>
           </tr>
