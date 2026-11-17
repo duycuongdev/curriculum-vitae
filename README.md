@@ -15,7 +15,7 @@ Standalone, print-ready **1-page A4** online CV built with semantic HTML & CSS, 
 - **Dual Language:** `index.html` (English) and `cv-vi.html` (Tiếng Việt) — a small toolbar link switches between them.
 - **Pre-exported PDFs:** `assets/NguyenDuyCuong-CV-EN.pdf` / `assets/NguyenDuyCuong-CV-VI.pdf` for direct download links (used by the portfolio's "Download CV" button).
 - **Screen-Only PDF Toolbar:** Built-in **Save PDF** (`window.print()`) button that automatically hides when printing or exporting.
-- **Structured Project Table:** Clean single-column tech CV format highlighting architecture, real-time Socket.IO features, Dual-Auth security, MongoDB pipelines, CI/CD, and links to live demos and repositories.
+- **Structured Project Table:** Clean single-column tech CV format highlighting architecture, Kanflow Assistant (Google Gemini 2.5 Flash Lite), real-time Socket.IO features, Dual-Auth security, MongoDB pipelines, CI/CD, and links to live demos and repositories.
 - **Responsive Mobile View:** Adapts smoothly into a stacked single-column layout on screens narrower than `820px`.
 
 ## Export to PDF
