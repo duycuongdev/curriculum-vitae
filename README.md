@@ -2,10 +2,10 @@
 
 Standalone, print-ready **1-page A4** online CV built with semantic HTML & CSS, featuring clickable project links and instant browser **Save PDF** export. Available in **English** and **Tiếng Việt**.
 
-- **Live CV EN (GitHub Pages):** https://duycuongdev.github.io/curriculum-vitae/
-- **Live CV VI (GitHub Pages):** https://duycuongdev.github.io/curriculum-vitae/cv-vi.html
-- **Ready-made PDF (EN):** https://duycuongdev.github.io/curriculum-vitae/assets/NguyenDuyCuong-CV-EN.pdf
-- **Ready-made PDF (VI):** https://duycuongdev.github.io/curriculum-vitae/assets/NguyenDuyCuong-CV-VI.pdf
+- **Live CV EN (Vercel):** https://kanflow-smart.vercel.app/
+- **Live CV VI (Vercel):** https://kanflow-smart.vercel.app/cv-vi.html
+- **Ready-made PDF (EN):** https://kanflow-smart.vercel.app/assets/NguyenDuyCuong-CV-EN.pdf
+- **Ready-made PDF (VI):** https://kanflow-smart.vercel.app/assets/NguyenDuyCuong-CV-VI.pdf
 - **Portfolio Site:** https://duycuongdev.github.io/portfolio/ ([Repository](https://github.com/duycuongdev/portfolio))
 - **GitHub:** https://github.com/duycuongdev
 
@@ -20,7 +20,7 @@ Standalone, print-ready **1-page A4** online CV built with semantic HTML & CSS, 
 
 ## Export to PDF
 
-1. Open [the live CV](https://duycuongdev.github.io/curriculum-vitae/) (or `index.html` locally).
+1. Open [the live CV](https://kanflow-smart.vercel.app/) (or `index.html` locally).
 2. Click **Save PDF** in the top-right toolbar (or press `Ctrl+P` / `Cmd+P`).
 3. Recommended browser print settings:
    - **Destination:** Save as PDF
